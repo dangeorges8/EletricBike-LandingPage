@@ -125,7 +125,7 @@ nav {
 }
 
 main {
-  margin-top: 15rem;;
+  margin-top: 20rem;;
   font-size: 3rem;
   color: var(--color-text-title);
 }
@@ -208,7 +208,7 @@ div section {
   }
 }
 
-.features ul {
+.featuresDiv ul {
   margin: 3rem auto;
   min-width: 800px;
   display: flex;
@@ -216,18 +216,70 @@ div section {
   align-items: center;
   justify-content: space-evenly;
   font-size: 2rem;
-  padding-left: 7rem;
+  
+  list-style: none;
 }
 @media(max-width: 699px) {
-  .features {
+  .featuresDiv {
   max-width: 300px;
   }
+
+  .featuresDiv ul {
+    display: block;
+    text-align: initial;
+    padding: 0;
+    list-style: none;
+    }
 }
+
+.featuresDiv ul li {
+  width: 220px;
+  height: 300px;
+  border: 1px solid var(--color-text-complement);
+  border-radius: 5px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  line-height: 4rem;
+  margin-bottom:2rem;
+}
+
 @media(max-width: 699px) {
-  .features ul {
-  display: block;
-  text-align: initial;
-  padding: 0;
-  list-style: none;
+  .featuresDiv ul li {
+    width: 350px;
+    height: 300px;
+    margin-left: -2rem;
+    text-align: center;
+    text-justify: distribute;
+    padding: 0;
+    padding-top: 2rem;
   }
+}
+
+.video {
+  text-align: center;
+}
+
+.video #video {
+  width: 0;
+  height: 0;
+}
+
+.iframe-container {
+  margin-top: 3rem;
+}
+
+.iframe-container iframe {
+  height: 315px; 
+  width: 560px;
+}
+
+@media(max-width: 699px){
+  .iframe-container iframe {
+    height: 200px; 
+    width: 400px;
+  }
+}
+
+.pricingValues {
+  margin-top: 3rem;
 }
